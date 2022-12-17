@@ -1,20 +1,27 @@
+
+
+/* googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap');
+
+
 body{
-    /* background-color: rgb(21 31 50); */
+    font-family: 'Livvic', sans-serif;
+    background-color: #0633a4;
 }
 .all-thread{
     background-color: #f1f1f1;
     text-decoration: none;
     padding: 10px;
     display: block;
-    border-radius: 15px;
-    margin-top: 10px;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 5px;
     position: relative;
   
     
 }
 
 
-.all-thread::before{
+/* .all-thread::before{
   content: '';
   width: 10px;
   height: 22px;
@@ -24,12 +31,23 @@ body{
  
   border-radius: 5px;
 
+} */
+
+::placeholder { 
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+.sticky-new{
+    position: sticky !important;
+    top: 20px !important;
 }
 
-.all-thread:hover{
+/* .all-thread:hover{
     color: black;
-    background-color: #beb5b5;
-}
+    background-color: #f1ecec;
+} */
 
 .text-btn{
     display: inline-block;
@@ -40,14 +58,15 @@ body{
 /* latest */
 
 .forum-img{
-    width: 52px;
-    height: 52px;
+    /* width: 77px;
+    height: 77px; */
+    
 }
 .forum-div{
     width: 100%;
-    background-color: #beb5b5;
+    background-color: whitesmoke;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 0px 25px 0px 25px;
 }
 .solve-btn{
     border: none;
@@ -70,7 +89,7 @@ body{
 .menubar-cls{
     width: 23px;
     height: 7px;
-    background-color: gray;
+    background-color: white;
     border-radius: 10px;
     
 }
@@ -78,7 +97,7 @@ body{
 .menubar{
     width: 14px;
     height: 7px;
-    background-color: gray;
+    background-color: white;
     border-radius: 10px;
    
 }
@@ -95,7 +114,7 @@ body{
 .menubar-item{
     width: 18px;
     height: 7px;
-    background-color: gray;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -123,5 +142,11 @@ body{
     align-items: center;
     justify-content: center;
     
+  }
+
+
+  /* footer */
+  .footer-logo img{
+    height: 40px;
   }
 
