@@ -6,6 +6,10 @@
 
 body{
     font-family: 'Livvic', sans-serif;
+    /* background-color: #0633a4; */
+}
+
+.forum-background{
     background-color: #0633a4;
 }
 .all-thread{
@@ -21,17 +25,7 @@ body{
 }
 
 
-/* .all-thread::before{
-  content: '';
-  width: 10px;
-  height: 22px;
-  background-color: rgb(18, 139, 253);
-  display: block;
-  position: absolute;
- 
-  border-radius: 5px;
 
-} */
 
 ::placeholder { 
     color: white;
@@ -44,10 +38,7 @@ body{
     top: 20px !important;
 }
 
-/* .all-thread:hover{
-    color: black;
-    background-color: #f1ecec;
-} */
+
 
 .text-btn{
     display: inline-block;
