@@ -26,15 +26,58 @@
 
 <body>
 
+    <!-- navbar -->
+    <section>
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="footer-logo">
+                        <a href=""><img src="https://i.ibb.co/p1jBnsc/logo.png" alt="Logo" /></a>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Project</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                      </li>
+                      
+                     
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+         </div>
+    </section>
+
+
     <!-- forum -->
     <section class=" forum-background py-5">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-3 ">
-                    <div class="sticky-new">
+                    <div class="sticky-new"> 
+                        <!-- -->
 
-                        <button type="button" class="btn btn-primary fw-bold shadow-lg py-2  w-100 rounded"> <span
-                                class="h5 "><i class="fa-regular fa-pen-to-square "></i> New Discussion</span> </button>
+                        <button type="button" class="btn new-button border border-light fw-bold shadow-lg py-2  w-100 rounded text-light"> <span
+                                class="h5"> <i class="fa-solid fa-pen fs-6 border p-2 rounded-pill p-2 me-2"></i>New Discussion </span> </button>
                         <div class="mt-4 fw-bold">
 
 
@@ -67,8 +110,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="d-flex mb-4">
                             <div>
-                                <select class="form-select rounded-pill select-btn "
-                                    aria-label="Default select example">
+                                <select class="form-select rounded select-btn" aria-label="Default select example">
                                     <option selected>Latest</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -76,8 +118,8 @@
                                 </select>
                             </div>
                             <div class="ms-3">
-                                <select class="form-select rounded-pill select-btn" aria-label="Default select example">
-                                    <option selected>all</option>
+                                <select class="form-select rounded select-btn" aria-label="Default select example">
+                                    <option selected>All</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -87,29 +129,14 @@
 
                         <div class="d-flex">
 
-                            <!-- <div>
-                                <div class="menuicons">
-                                    <div class="menubar-item"></div>
-                                    <div class="menubar-item"></div>
-                                </div>
-                            </div>
-                            <div class="ms-3 me-3">
-                                <div class="menuicons">
-                                    <div class="menubar-cls"></div>
-                                    <div class="menubar-cls"></div>
-                                    <div class="menubar mt"></div>
-                                </div>
-    
-                            </div> -->
 
-                            <!-- search -->
                             <div class="form-outer">
                                 <div>
                                     <form class="form">
-                                        <div class="form-input border px-3 rounded-pill py-1">
+                                        <div class="form-input  px-3 rounded py-1">
                                             <span class="icon"><i
-                                                    class="fa-solid fs-6 text-light fa-magnifying-glass"></i></span>
-                                            <input class=" input-cls text-light w-100" type="text" name="input" id=""
+                                                    class="fa-solid fs-6 text-dark fa-magnifying-glass ps-1"></i></span>
+                                            <input class=" input-cls text-dark w-100" type="text" name="input" id=""
                                                 placeholder="Search...">
 
                                         </div>
@@ -129,10 +156,10 @@
 
                     <!-- card -->
 
-                    <div class="row forum-div pt-4 pb-2 mt-3 ms-2">
+                    <div class="row forum-card1  pb-2 pt-5 ms-2 shadow-lg">
                         <div class="col-lg-1">
                             <a href="#">
-                                <img class="rounded-full forum-img img-fluid"
+                                <img class=" forum-img img-fluid"
                                     src="https://i1.wp.com/s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-15.png?ssl=1"
                                     alt="">
                             </a>
@@ -144,31 +171,24 @@
 
                             </div>
 
-                            <p>I have project data in table named "projects" where project images in separate
+                            <p class="card-hover">I have project data in table named "projects" where project images in separate
                                 table named "project_images" and my main issue here is that the images uploaded in
                                 "uploads/projects" folder does not deleted not sure why...?!</p>
 
-                            <!-- <div class="d-flex ms-3">
-                               
-                                <div> <span class="badge rounded-pill bg-primary px-3 ms-3"> <i
-                                            class="fa-solid  fa-check"></i> solved</span></div>
-                            </div> -->
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <span class="fw-bold">Category: <a
-                                            class="rounded-pill bg-primary text-light text-decoration-none px-2 py-1 ms-2"
-                                            href="">Next.js</a> </span>
+                                    <span class="fw-bold"><a class="text-decoration-none" href="">Next.js</a></span>
                                 </div>
-                                <div class="text-end">
-                                    <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
+                                <div class="text-end title-hover">
+                                    <span><i class="fa-solid fa-eye fs-6 "></i> 25</span>
                                     <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
                                 </div>
 
                             </div>
 
                             <div class="d-flex justify-content-end ">
-                                <!-- <a href="">serglu17</a> -->
-                                <a class="text-decoration-none" href="">Solved: Spidy(13 mins ago)</a>
+                               
+                                <a class="text-decoration-none forum-solve title-hover" href="">Solved: Spidy(13 mins ago)</a>
                             </div>
                         </div>
 
@@ -176,37 +196,31 @@
 
 
                     </div>
-                    <div class="row forum-div pt-4 pb-2 mt-3 ms-2">
+                    <div class="row forum-card2 pb-2 pt-5 ms-2 shadow-lg mt-3">
                         <div class="col-lg-1">
                             <a href="#">
-                                <img class="rounded-full forum-img img-fluid"
+                                <img class="forum-img img-fluid"
                                     src="https://i1.wp.com/s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-15.png?ssl=1"
                                     alt="">
                             </a>
                         </div>
                         <div class="col-lg-11">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h3>delete images file when delete project</h3>
+                                <h3 >delete images file when delete project</h3>
 
 
                             </div>
 
-                            <p>I have project data in table named "projects" where project images in separate
+                            <p class="card-hover" >I have project data in table named "projects" where project images in separate
                                 table named "project_images" and my main issue here is that the images uploaded in
                                 "uploads/projects" folder does not deleted not sure why...?!</p>
 
-                            <!-- <div class="d-flex ms-3">
-                               
-                                <div> <span class="badge rounded-pill bg-primary px-3 ms-3"> <i
-                                            class="fa-solid  fa-check"></i> solved</span></div>
-                            </div> -->
+
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <span class="fw-bold">Category: <a
-                                            class="rounded-pill bg-primary text-light text-decoration-none px-2 py-1 ms-2"
-                                            href="">Next.js</a> </span>
+                                    <span class="fw-bold"><a class="text-decoration-none" href="">Next.js</a></span>
                                 </div>
-                                <div class="text-end">
+                                <div class="text-end title-hover">
                                     <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
                                     <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
                                 </div>
@@ -214,8 +228,8 @@
                             </div>
 
                             <div class="d-flex justify-content-end ">
-                                <!-- <a href="">serglu17</a> -->
-                                <a class="text-decoration-none" href="">Solved: Spidy(13 mins ago)</a>
+                              
+                                <a class="text-decoration-none title-hover" href="">Solved: Spidy(13 mins ago)</a>
                             </div>
                         </div>
 
@@ -223,147 +237,10 @@
 
 
                     </div>
-                    <div class="row forum-div pt-4 pb-2 mt-3 ms-2">
-                        <div class="col-lg-1">
-                            <a href="#">
-                                <img class="rounded-full forum-img img-fluid"
-                                    src="https://i1.wp.com/s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-15.png?ssl=1"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-11">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3>delete images file when delete project</h3>
-
-
-                            </div>
-
-                            <p>I have project data in table named "projects" where project images in separate
-                                table named "project_images" and my main issue here is that the images uploaded in
-                                "uploads/projects" folder does not deleted not sure why...?!</p>
-
-                            <!-- <div class="d-flex ms-3">
-                               
-                                <div> <span class="badge rounded-pill bg-primary px-3 ms-3"> <i
-                                            class="fa-solid  fa-check"></i> solved</span></div>
-                            </div> -->
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span class="fw-bold">Category: <a
-                                            class="rounded-pill bg-primary text-light text-decoration-none px-2 py-1 ms-2"
-                                            href="">Next.js</a> </span>
-                                </div>
-                                <div class="text-end">
-                                    <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
-                                    <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-end ">
-                                <!-- <a href="">serglu17</a> -->
-                                <a class="text-decoration-none" href="">Solved: Spidy(13 mins ago)</a>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="row forum-div pt-4 pb-2 mt-3 ms-2">
-                        <div class="col-lg-1">
-                            <a href="#">
-                                <img class="rounded-full forum-img img-fluid"
-                                    src="https://i1.wp.com/s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-15.png?ssl=1"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-11">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3>delete images file when delete project</h3>
-
-
-                            </div>
-
-                            <p>I have project data in table named "projects" where project images in separate
-                                table named "project_images" and my main issue here is that the images uploaded in
-                                "uploads/projects" folder does not deleted not sure why...?!</p>
-
-                            <!-- <div class="d-flex ms-3">
-                               
-                                <div> <span class="badge rounded-pill bg-primary px-3 ms-3"> <i
-                                            class="fa-solid  fa-check"></i> solved</span></div>
-                            </div> -->
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span class="fw-bold">Category: <a
-                                            class="rounded-pill bg-primary text-light text-decoration-none px-2 py-1 ms-2"
-                                            href="">Next.js</a> </span>
-                                </div>
-                                <div class="text-end">
-                                    <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
-                                    <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-end ">
-                                <!-- <a href="">serglu17</a> -->
-                                <a class="text-decoration-none" href="">Solved: Spidy(13 mins ago)</a>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="row forum-div pt-4 pb-2 mt-3 ms-2">
-                        <div class="col-lg-1">
-                            <a href="#">
-                                <img class="rounded-full forum-img img-fluid"
-                                    src="https://i1.wp.com/s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-15.png?ssl=1"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-11">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3>delete images file when delete project</h3>
-
-
-                            </div>
-
-                            <p>I have project data in table named "projects" where project images in separate
-                                table named "project_images" and my main issue here is that the images uploaded in
-                                "uploads/projects" folder does not deleted not sure why...?!</p>
-
-                            <!-- <div class="d-flex ms-3">
-                               
-                                <div> <span class="badge rounded-pill bg-primary px-3 ms-3"> <i
-                                            class="fa-solid  fa-check"></i> solved</span></div>
-                            </div> -->
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span class="fw-bold">Category: <a
-                                            class="rounded-pill bg-primary text-light text-decoration-none px-2 py-1 ms-2"
-                                            href="">Next.js</a> </span>
-                                </div>
-                                <div class="text-end">
-                                    <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
-                                    <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-end ">
-                                <!-- <a href="">serglu17</a> -->
-                                <a class="text-decoration-none" href="">Solved: Spidy(13 mins ago)</a>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
+                    
+                    
+                
+                    
 
                 </div>
 
@@ -381,8 +258,8 @@
                     <div class="footer-logo">
                         <a href=""><img src="https://i.ibb.co/p1jBnsc/logo.png" alt="Logo" /></a>
                     </div>
-                    <div class="pb-3 mt-4">
-                        <span className="footer-style">
+                    <div class="pb-3 footer mt-4">
+                        <span className="footer">
                             Buyonia Limited is a software company owned and managed by a team of IT professionals and
                             technocrats, who have local and global experience in business process exploration,
                             automation and consultancy for ICT products measuring the present market demand. The team
@@ -399,26 +276,29 @@
                 </div>
 
                 <!-- contactInfo -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 footer">
                     <h5 class="fw-bold mt-2">Contact Info</h5>
                     <div class="py-3">
 
                         <div class="d-flex">
-                            <span><i class="fa-solid fa-location-dot fs-6"></i></span>
-                            <p class="ms-2">186 Perth Road, Barking IG11 7UD, United Kingdom</p>
+                            <span><i class="fa-solid fa-location-dot fs-6 text-primary"></i></span>
+                            <p class="ms-2">186 Perth Road, Barking IG11 7UD,United
+                                <br>
+                                 Kingdom
+                            </p>
                         </div>
                         <div class="d-flex">
-                            <span><i class="fa-solid fa-location-dot fs-6"></i></span>
+                            <span><i class="fa-solid fa-location-dot fs-6 text-primary"></i></span>
                             <p class="ms-2">Suvastu Zenim Plaza (3rd Floor), House No. 37, Rd No. 16 (Old 27),
                                 Dhanmondi, Dhaka 1216, Bangladesh</p>
                         </div>
                         <div class="">
-                            <span><i class="fa-solid fa-phone fs-6"></i></span>
+                            <span><i class="fa-solid fa-phone fs-6 text-primary"></i></span>
                             <a class="text-decoration-none ms-2" href="tel:+8801732256211"
                                 target="_blank">+8801732256211</a>
                         </div>
                         <div class="mt-3">
-                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-regular fa-envelope text-primary"></i></span>
                             <a class="text-decoration-none ms-2" href="mailto:info@buyoniasoft.com"
                                 target="_blank">info@buyoniasoft.com</a>
                         </div>
@@ -427,15 +307,17 @@
                 </div>
 
                 <!-- Services -->
-                <div class="col-12  col-lg-4">
+                <div class="col-12  col-lg-4 footer">
                     <h5 class="fw-bold mt-2">Services</h5>
                     <div class="py-3">
                         <div> <a class="text-decoration-none" href="">Web Development</a></div>
                         <div class="mt-2 "> <a class="text-decoration-none " href="">App Development</a></div>
                         <div class="mt-2"> <a class="text-decoration-none " href="">SaaS Solutions</a></div>
-                        <div class="mt-2"> <a class="text-decoration-none " href="">Enterprise Resource Planning(ERP)</a></div>
+                        <div class="mt-2"> <a class="text-decoration-none " href="">Enterprise Resource
+                                Planning(ERP)</a></div>
                         <div class="mt-2"> <a class="text-decoration-none " href="">Digital Marketing</a></div>
-                        <div class="mt-2"> <a class="text-decoration-none " href="">Branding & Graphics Designing</a></div>
+                        <div class="mt-2"> <a class="text-decoration-none " href="">Branding & Graphics Designing</a>
+                        </div>
                     </div>
                 </div>
 
@@ -446,7 +328,7 @@
             </div>
 
         </div>
-    </section> 
+    </section>
 
 </body>
 

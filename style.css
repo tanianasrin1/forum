@@ -9,15 +9,21 @@ body{
     /* background-color: #0633a4; */
 }
 
+/* navbar */
+.nav-link {
+    /* font-weight: 400 !important; */
+    font-weight: bold !important;
+}
+
 .forum-background{
-    background-color: #0633a4;
+    background-color: #d8ebf3;
 }
 .all-thread{
     background-color: #f1f1f1;
     text-decoration: none;
     padding: 10px;
     display: block;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 5px;
     margin-top: 5px;
     position: relative;
   
@@ -28,7 +34,7 @@ body{
 
 
 ::placeholder { 
-    color: white;
+    color: black !important;
     font-weight: 500;
     opacity: 1;
   }
@@ -46,19 +52,85 @@ body{
     /* border: 1px solid red; */
 
 }
+
+.new-button{
+    background-image: linear-gradient(
+        #219de5,
+        #1554db,
+        #082ac0,
+        #180585
+      ) !important;
+}
+
+.new-button:hover{
+    background-image: linear-gradient(
+    #180585,
+    #082ac0,    
+    #1554db,
+    #219de5
+  ) !important;
+
+}
+
+.form-select{
+    font-weight: 500 !important;
+}
 /* latest */
 
+
+.forum-background{
+    /* background-image: url("https://img.freepik.com/free-vector/blue-fluid-background_53876-114597.jpg?w=1380&t=st=1671424521~exp=1671425121~hmac=7a66e9ab514118457d4d1fef58a5f92315017da9ac66cf4b546434e6ee81390f"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 .forum-img{
-    /* width: 77px;
-    height: 77px; */
+    border-radius: 50%
     
 }
-.forum-div{
+.forum-card1{
     width: 100%;
     background-color: whitesmoke;
     padding: 10px;
-    border-radius: 0px 25px 0px 25px;
+    border-radius: 15px;
 }
+
+.forum-card1:hover{
+  background-color: #20c997;
+  cursor: pointer !important;
+  
+
+  
+}
+.forum-card2{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.forum-card2:hover{
+  background-color: rgba(13, 220, 247, 0.973);
+  cursor: pointer !important;
+  
+ 
+  
+}
+
+.forum-card1:hover .title-hover{
+    color: white !important;
+    font-weight: bold;
+}
+.forum-card2:hover .title-hover{
+    color: white !important;
+    font-weight: bold;
+}
+
+.card-hover{
+    font-weight: 500;
+}
+
 .solve-btn{
     border: none;
     color: white;
@@ -71,9 +143,19 @@ body{
 }
 
 .select-btn{
-    padding: 10px ;
+    /* border: 3px solid white; */
+    padding: 13px ;
     width: 150px;
     
+}
+
+.forum-solve:hover{
+    /* color: rgb(132, 236, 132); */
+}
+
+.form-input{
+    background-color: white;
+    padding: 7px !important;
 }
 
 /* menubar */
@@ -85,34 +167,12 @@ body{
     
 }
 
-.menubar{
-    width: 14px;
-    height: 7px;
-    background-color: white;
-    border-radius: 10px;
-   
-}
-.menuicons{
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    background-color: #c9c6c6;
-    padding: 7px;
-    border-radius: 10px;
-}
 
-/* firstmenubar */
-.menubar-item{
-    width: 18px;
-    height: 7px;
-    background-color: white;
-    border-radius: 10px;
-}
+
 
 
 .input-cls{
-    background: transparent;
-    /* border-bottom: 3px solid  #979797; */
+    background-color: white;
     width: 75%;
     padding: 5px 10px 5px 30px;
     outline: none;
@@ -139,5 +199,12 @@ body{
   /* footer */
   .footer-logo img{
     height: 40px;
+  }
+
+  .footer{
+    text-align: justify !important;
+    /* letter-spacing:  -0.6px !important; */
+    font-weight: 500 !important;
+    /* border: 1px solid red !important; */
   }
 
