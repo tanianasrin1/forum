@@ -197,14 +197,15 @@ body{
 
 
   /* footer */
+  .footer-bg{
+   
+    background-image: url("https://i.ibb.co/XJvWrrw/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .footer-logo img{
     height: 40px;
   }
 
-  .footer{
-    text-align: justify !important;
-    /* letter-spacing:  -0.6px !important; */
-    font-weight: 500 !important;
-    /* border: 1px solid red !important; */
-  }
-
+ 
