@@ -16,6 +16,29 @@ body{
     
 }
 
+.container-custom {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-custom {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-custom {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-custom {
+    width: 1150px;
+    
+  }
+}
+
 /* navbar */
 .active{
     color: #007bff !important;
@@ -244,6 +267,24 @@ body{
 
 
   /* footer */
+
+  .footer-font{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify !important;
+    letter-spacing:  -0.6px !important;
+    line-height: 26px;
+    color: rgb(69, 69,69);
+  }
+
+  .footer-textcolor{
+    color: rgb(69, 69,69);
+  }
+
+  .footer-textcolor:hover{
+    color: #007bff;
+  }
+
   .footer-bg{
    
     background-image: url("https://i.ibb.co/XJvWrrw/footer-bg.png");
