@@ -27,45 +27,49 @@
 <body>
 
     <!-- navbar -->
-    <section>
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="footer-logo">
-                        <a href=""><img src="https://i.ibb.co/p1jBnsc/logo.png" alt="Logo" /></a>
-                    </div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Project</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Team</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Contact</a>
-                      </li>
-                      
-                     
-                    </ul>
-                    
-                  </div>
-                </div>
-              </nav>
-         </div>
-    </section>
+   
+
+  <div class=" bg-white Sticky p-2 ">
+    <nav class="container navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+            <div class="footer-logo">
+                <a href=""><img src="https://i.ibb.co/p1jBnsc/logo.png" alt="Logo" /></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menubar"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse Navbar-style" id="navbarTogglerDemo02">
+            <ul class="navbar-nav menubar-style ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="#">Contact</a>
+              </li>
+              
+              
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+  </div>
+  
+
+
 
 
     <!-- forum -->
@@ -73,11 +77,13 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-3 ">
-                    <div class="sticky-new"> 
+                    <div class="sticky-new">
                         <!-- -->
 
-                        <button type="button" class="btn new-button border border-light fw-bold shadow-lg py-2  w-100 rounded text-light"> <span
-                                class="h5"> <i class="fa-solid fa-pen fs-6 border p-2 rounded-pill p-2 me-2"></i>New Discussion </span> </button>
+                        <button type="button"
+                            class="btn new-button border border-light fw-bold shadow-lg py-2  w-100 rounded text-light">
+                            <span class="h5"> <i class="fa-solid fa-pen fs-6 border p-2 rounded-pill p-2 me-2"></i>New
+                                Discussion </span> </button>
                         <div class="mt-4 fw-bold">
 
 
@@ -156,7 +162,7 @@
 
                     <!-- card -->
 
-                    <div class="row forum-card1  pb-2 pt-5 ms-2 shadow-lg">
+                    <div class="row forum-card1  pb-4 pt-5 ms-2 shadow-lg ">
                         <div class="col-lg-1">
                             <a href="#">
                                 <img class=" forum-img img-fluid"
@@ -167,28 +173,32 @@
                         <div class="col-lg-11">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3>delete images file when delete project</h3>
-
+                                <a class="text-decoration-none forum-solve title-hover" href=""> <span
+                                        class="badge bg-primary">Solved</span>
+                                    Spidy(13 mins ago)</a>
 
                             </div>
 
-                            <p class="card-hover">I have project data in table named "projects" where project images in separate
+                            <p class="card-hover">I have project data in table named "projects" where project images in
+                                separate
                                 table named "project_images" and my main issue here is that the images uploaded in
                                 "uploads/projects" folder does not deleted not sure why...?!</p>
 
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <span class="fw-bold"><a class="text-decoration-none" href="">Next.js</a></span>
+                                    <span class="fw-bold">Category: <a class="text-decoration-none ms-2"
+                                            href="">Next.js</a></span>
                                 </div>
                                 <div class="text-end title-hover">
-                                    <span><i class="fa-solid fa-eye fs-6 "></i> 25</span>
+                                    <span><i class="fa-solid fa-eye fs-6 "></i> 20</span>
                                     <span><i class="fa-solid fa-comment fs-6 ms-3"></i> 7</span>
                                 </div>
 
                             </div>
 
                             <div class="d-flex justify-content-end ">
-                               
-                                <a class="text-decoration-none forum-solve title-hover" href="">Solved: Spidy(13 mins ago)</a>
+
+
                             </div>
                         </div>
 
@@ -196,7 +206,7 @@
 
 
                     </div>
-                    <div class="row forum-card2 pb-2 pt-5 ms-2 shadow-lg mt-3">
+                    <div class="row forum-card2 pb-4 pt-5 ms-2 shadow-lg mt-3">
                         <div class="col-lg-1">
                             <a href="#">
                                 <img class="forum-img img-fluid"
@@ -206,19 +216,24 @@
                         </div>
                         <div class="col-lg-11">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h3 >delete images file when delete project</h3>
+                                <h3>delete images file when delete project</h3>
+                                <div class="d-flex justify-content-end ">
 
+                                    <a class="text-decoration-none title-hover" href=""> Spidy(13 mins ago)</a>
+                                </div>
 
                             </div>
 
-                            <p class="card-hover" >I have project data in table named "projects" where project images in separate
+                            <p class="card-hover">I have project data in table named "projects" where project images in
+                                separate
                                 table named "project_images" and my main issue here is that the images uploaded in
                                 "uploads/projects" folder does not deleted not sure why...?!</p>
 
 
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <span class="fw-bold"><a class="text-decoration-none" href="">Next.js</a></span>
+                                    <span class="fw-bold">Category: <a class="text-decoration-none ms-2"
+                                            href="">Next.js</a></span>
                                 </div>
                                 <div class="text-end title-hover">
                                     <span><i class="fa-solid fa-eye fs-6"></i> 25</span>
@@ -227,20 +242,17 @@
 
                             </div>
 
-                            <div class="d-flex justify-content-end ">
-                              
-                                <a class="text-decoration-none title-hover" href="">Solved: Spidy(13 mins ago)</a>
-                            </div>
+
                         </div>
 
 
 
 
                     </div>
-                    
-                    
-                
-                    
+
+
+
+
 
                 </div>
 
@@ -251,7 +263,7 @@
 
 
     <!-- Footer section -->
-    <section class="footer-bg pt-5 pb-5">
+    <section class="footer-bg p-5">
         <div class="container  mt-5">
             <div class="row ">
                 <div class="col-12 col-lg-5">
@@ -269,7 +281,7 @@
                     </div>
 
                     <div>
-                        <a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                        <a href=""><span><i class="fa-brands fa-facebook-f fs-6"></i></span></a>
                         <a href=""><span><i class="fa-brands fa-whatsapp ms-2"></i></span></a>
                         <a href=""> <span><i class="fa-brands fa-linkedin-in ms-2"></i></span></a>
                     </div>
@@ -284,7 +296,7 @@
                             <span><i class="fa-solid fa-location-dot fs-6 text-primary"></i></span>
                             <p class="ms-2">186 Perth Road, Barking IG11 7UD,United
                                 <br>
-                                 Kingdom
+                                Kingdom
                             </p>
                         </div>
                         <div class="d-flex">
@@ -321,17 +333,21 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
 
             <div class="pt-5 text-center">
                 <span> &copy;2022 Buyonia Limited. All Rights Reserved.</span>
             </div>
-          
+
 
         </div>
     </section>
+
+
+
+  
 
 </body>
 
