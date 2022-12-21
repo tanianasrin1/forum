@@ -65,7 +65,7 @@ body{
 @media screen and (max-width:992px) {
     
     .Navbar-style{
-        /* position: absolute !important; */
+        position: absolute !important;
         top: 55px !important;
         left: 0 ;
         background-color: white;
@@ -79,11 +79,36 @@ body{
        border-bottom: 1px solid rgb(212, 210, 210); 
     }
 
-   .Sticky{
-    position: static !important;
+   .copy{
+    font-size: 12px;
    }
 
+  
+
 }
+/* 
+@media screen and  (max-width: 576px) { 
+      .Navbar-style{
+        position: relative !important;
+        width: 374px !important;
+      }
+      .navbar-nav{
+        
+        position: absolute !important;
+        background: white !important;
+        width: 374px !important;
+        left: 0px;
+        right: -34px;
+        z-index: 5 !important;
+        top: 0 !important;
+        padding: 15px !important;
+      }
+
+      
+} */
+
+
+
 /* forum */
 .forum-background{
     background-color: #d8ebf3;
@@ -296,17 +321,45 @@ body{
     height: 40px;
   }
 
-  .fa-brands{
-    border: 1px solid red;
-    padding: 4px;
-    /* background-color: #007bff; */
+  .test1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    Color: gray;
+    background-color: white;
+    min-width: 2em;
     border-radius: 50%;
+    vertical-align: middle;
+    transition: background-color  300ms linear,Color 300ms;
+    -moz-transition: background-color  300ms linear,Color 300ms;
+    -o-transition: background-color  300ms linear,Color 300ms;
+    -webkit-transition: background-color  300ms linear,Color 300ms;
+    -ms-transition: background-color  300ms linear,Color 300ms;
+  
+  }
+  .test1:after {
+    content: "";
+    float: left;
+    width: auto;
+    padding-bottom: 100%;
+  }
+  
+  
+  
+  .test1:hover{
+      background-color: #007bff;
+      color: white;
+      transition: background-color  500ms linear,Color 500ms;
+      -moz-transition: background-color  500ms linear,Color 500ms;
+      -o-transition: background-color  500ms linear,Color 500ms;
+      -webkit-transition: background-color  500ms linear,Color 500ms;
+      -ms-transition: background-color  500ms linear,Color 500ms;
+  }
+  
+  .no_underline a{
+      text-decoration: none;
   }
 
-  .fa-brands:hover{
-    border: 1px solid red;
-    background-color: #007bff;
-    border-radius: 50%;
-  }
+
 
  
